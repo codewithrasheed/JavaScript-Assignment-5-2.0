@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript || Form Assignment</title>.
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        
+    input {
+        width: 250px;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin: 0px;
+        padding: 0px;
+        height: 50px;
+        outline: none !important;
+    
+    }
+    p{
+        color: red;
+        margin-top: -20px;
+        margin-left: -100px;
+        display: none; 
+    }
+    .btn:hover{
+        background-color: white;
+        color: black;
+    }
+    body{
+        background-color: blue;
+    }
+    .container{
+        border: 2px solid white;
+        color: white;
+    }
+    
+        </style>
+</head>
+<body>
+        <div class="container my-5 py-5">
+            <div class="my-2">
+                <h4 class="text-center">Contact Us Form</h4>
+            </div>
+
+            <div class="" style="display: flex; flex-direction: column; gap: 20px; align-items: center;">
+
+            <input type="text" required placeholder="Enter First Name" id="first_input"> 
+                <p id="first">This Field is Required</p>      
+                        
+                <input type="text" required placeholder="Enter Last Name" id="last_input">
+                <p id="last">This Field is Required</p>      
+                        
+                <input type="email" placeholder="Enter Email Address" id="Email_input" required>
+                <p id="Email">This Field is Required</p>
+                
+                <input type="password" required placeholder="Enter Password" id="password_input">
+                <p id="password">This Field is Required</p>      
+            
+                <input type="number" required placeholder="Enter Contact Number" id="contact_input">    
+                <p id="contact">This Field is Required</p>      
+            
+                <input type="number" required placeholder="Enter CNIC Number" id="cnic_input">
+                <p id="cnic">This Field is Required</p>      
+                        
+                <button class="btn px-5 py-2 btn-primary" onclick="
+                validityCheck()">Submit</button>             
+                </div>
+        </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
